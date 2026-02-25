@@ -1,4 +1,4 @@
-# Pokédex App
+# pokemon App
 
 A responsive React web application that lets you browse, filter, and explore Pokémon — built with the [PokéAPI](https://pokeapi.co/).
 
