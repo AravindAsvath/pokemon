@@ -49,8 +49,8 @@ A responsive React web application that lets you browse, filter, and explore Pok
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/pokedex-app.git
-cd pokedex-app
+git clone https://github.com/AravindAsvath/pokemon.git
+cd pokemon
 
 # Install dependencies
 npm install
