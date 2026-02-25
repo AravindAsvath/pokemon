@@ -12,7 +12,7 @@ A responsive React web application that lets you browse, filter, and explore Pok
 > - `screenshots/list-grid-view.png` — Grid view with filter applied
 > - `screenshots/list-view.png` — List view with pagination
 > - `screenshots/detail-page.png` — Pokémon detail page
-
+![alt text](image.png)
 ---
 
 ## Features
@@ -100,23 +100,46 @@ To deploy your own instance:
 ## Project Structure
 
 ```
+package.json
+README.md
+public/
+├── index.html
+├── manifest.json
+└── robots.txt
 src/
-├── components/
-│   ├── PokemonCard/        # Individual Pokémon card (grid & list variants)
-│   ├── PokemonList/        # List page with filter, pagination, view toggle
-│   ├── FilterBar/          # Filter controls (name/type)
-│   ├── Pagination/         # Pagination controls
-│   └── ViewToggle/         # List/Grid toggle button
-├── pages/
-│   ├── ListPage.js         # Main browse page
-│   └── DetailPage.js       # Individual Pokémon detail page
-├── hooks/
-│   └── usePokemon.js       # Custom hook for fetching Pokémon data
-├── utils/
-│   └── helpers.js          # Utility/helper functions
-├── __tests__/              # Unit test files
+├── App.css
 ├── App.js
-└── index.js
+├── index.css
+├── index.js
+├── reportWebVitals.js
+└── __mocks__/
+	└── react-router-dom.js
+app/
+├── AppProviders.js
+├── router.js
+├── features/
+│   └── pokemon/
+│       ├── __tests__/
+│       │   ├── pokemonApi.test.js
+│       │   ├── PokemonDetail.test.js
+│       │   ├── PokemonFilter.test.js
+│       │   └── PokemonList.test.js
+│       ├── api/
+│       │   └── pokemonApi.js
+│       ├── components/
+│       │   ├── PokemonCard.js
+│       │   ├── PokemonDetail.js
+│       │   ├── PokemonFilter.js
+│       │   └── PokemonList.js
+│       ├── hooks/
+│       │   ├── usePokemonDetail.js
+│       │   └── usePokemonList.js
+│       └── styles/
+│           └── pokemon.css
+└── shared/
+	├── components/
+	   ├── ErrorMessage.js
+	   └── SkeletonLoader.js
 ```
 
 ---
