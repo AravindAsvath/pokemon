@@ -8,11 +8,12 @@ A responsive React web application that lets you browse, filter, and explore Pok
 
 ## Screenshots
 
-> 📸 *Add screenshots here after deployment. Suggested shots:*
-> - `screenshots/list-grid-view.png` — Grid view with filter applied
-> - `screenshots/list-view.png` — List view with pagination
-> - `screenshots/detail-page.png` — Pokémon detail page
-![alt text](image.png)
+List Page Image with Search and grid/List View toggle (Grid View)
+![List Page](image.png)
+List Page with Pagination (List View)
+![alt text](image-1.png)
+Detail Page
+![alt text](image-2.png)
 ---
 
 ## Features
